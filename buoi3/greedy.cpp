@@ -43,11 +43,11 @@ void printAns(int num) {
   printf(
       "|---|------------------|---------|---------|---------|-----------|\n");
   for (int i = 0; i < n; i++) {
-    printf("|%2d |%-18s|%9.2f|%9.2f|%9.2f|%6d     |\n", i + 1,
-           knapsacks[i].name, knapsacks[i].w, knapsacks[i].v, knapsacks[i].key,
-           knapsacks[i].ans);
-    w = w + knapsacks[i].ans * knapsacks[i].w;
-    ans = ans + knapsacks[i].ans * knapsacks[i].v;
+    Knapsack item = knapsacks[i];
+    printf("|%2d |%-18s|%9.2f|%9.2f|%9.2f|%6d     |\n", i + 1, item.name,
+           item.w, item.v, item.key, item.ans);
+    w = w + item.ans * item.w;
+    ans = ans + item.ans * item.v;
   }
   printf(
       "|---|------------------|---------|---------|---------|-----------|\n");
