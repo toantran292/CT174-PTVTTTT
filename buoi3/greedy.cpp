@@ -82,6 +82,7 @@ void handleKnapsack1() {
   init();
   char fname[] = "CaiBalo1.txt";
   read(fname, 1);
+  bubbleSort(knapsacks, n);
   int w_t = w;
   for (int i = 0; i < n; i++) {
     Knapsack item = knapsacks[i];
@@ -96,6 +97,7 @@ void handleKnapsack2() {
   init();
   char fname[] = "CaiBalo2.txt";
   read(fname, 2);
+  bubbleSort(knapsacks, n);
   int w_t = w;
   for (int i = 0; i < n; i++) {
     Knapsack item = knapsacks[i];
@@ -110,6 +112,7 @@ void handleKnapsack3() {
   init();
   char fname[] = "CaiBalo3.txt";
   read(fname, 3);
+  bubbleSort(knapsacks, n);
   int w_t = w;
   for (int i = 0; i < n; i++) {
     Knapsack item = knapsacks[i];
