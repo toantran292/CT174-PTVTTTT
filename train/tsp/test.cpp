@@ -8,7 +8,7 @@
 - Cong thuc tinh can duoi: TGT + (n-i) * canh nho nhat
 - TGT: Tong do dai cac canh da xet dua vao PA
 - i la thanh pho chung ta di den, thanh pho ban dau ung voi i=0
-- Canh nho nhat la do dai nho nhat cua cac canh chua duoc dua vao PA nao
+- Canh nho nhaat la do dai nho nhat cua cac canh chua duoc dua vao PA nao
 
 Du lieu cho trong file "TSP1.txt"
 
@@ -50,6 +50,7 @@ void read_file(char file_name[], canh a[][size], int *n) {
             a[i][j].da_dung = 0;
             ;
         }
+
     fclose(f);
 }
 
@@ -169,7 +170,7 @@ int main() {
     canh a[size][size];
     int n;
     printf("\nPhuong an TSP dung thuat toan NHANH CAN:\n");
-    read_file("TSP1.txt", a, &n);
+    read_file("tsp.txt", a, &n);
     canh PA[n];
     canh x[n];
     char tpxp, yn;
