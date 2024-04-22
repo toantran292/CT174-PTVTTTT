@@ -46,6 +46,8 @@ void sort() {
     }
 }
 
+
+
 void bab(int i) {
     if (current_cost <= best_cost) return;
 
